@@ -11,13 +11,13 @@
 $edad = 34;
 $genero = "Masculino";
 
-if ($genero == "Masculino") {
+if ($genero === "Masculino") {
     if ($edad >= 60) {
         echo "Ya se puede jubilar.";
     } else {
         echo "Aun no cuenta con la edad suficiente para jubilarse.";
     }
-} else if ($genero == "Femenino") {
+} else if ($genero === "Femenino") {
     if ($edad >= 54) {
         echo "Ya se puede jubilar.";
     }
