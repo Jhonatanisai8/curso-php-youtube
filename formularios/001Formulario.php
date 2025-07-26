@@ -72,6 +72,15 @@
         button:hover {
             cursor: pointer;
         }
+
+        .opciones__multiples {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .opciones__multiples label {
+            font-size: 1em;
+        }
     </style>
 </head>
 
@@ -92,13 +101,39 @@
                 <option value="matematicas">Matematicas</option>
             </select>
         </div>
+        <div style="margin-top: 1rem;">
+            <label for="lenguajes">Lenguaje de Programacion Favoritos</label>
+            <select name="lenguaje[]" id="lenguaje" multiple>
+                <option value="java">JAVA</option>
+                <option value="python">PYTHON</option>
+                <option value="c">C++</option>
+                <option value="javascript">JAVASCRIPT</option>
+            </select>
+        </div>
         <br>
         <div>
-            <label for="opcion-1">
-                <input type="checkbox" value="Manzana" id="opcion-1" name="frutas">
+            <label for="opcion-04">
+                <input type="checkbox" value="Manzana" id="opcion-04" name="frutas">
                 Manzana
             </label>
         </div>
+        <br>
+        <div class="opciones__multiples">
+            <h2>PROFESIONES</h2>
+            <label for="opcion-01">
+                <input type="checkbox" value="ingenieria_de_sistemas" id="opcion-01" name="profesiones[]">
+                Ingeniería de Sistemas
+            </label>
+            <label for="opcion-02">
+                <input type="checkbox" value="ingenieria_de_software" id="opcion-02" name="profesiones[]">
+                Ingeniería de Software
+            </label>
+            <label for="opcion-03">
+                <input type="checkbox" value="ciencias_de_comunicacion" id="opcion-03" name="profesiones[]">
+                Ciencias de la Computación
+            </label>
+        </div>
+
         <br>
         <div>
             <button type="submit">Enviar</button>
