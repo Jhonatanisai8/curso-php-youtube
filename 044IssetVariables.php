@@ -1,7 +1,7 @@
 <?php
 $numero_recibido = $_POST['numero'];
 
-if (isset($numero_recibido) && $numero_recibido !== "") {
+// if (isset($numero_recibido) && $numero_recibido !== "") {
     echo "Valor de la variable es " . $numero_recibido;
     echo "<br>";
     echo "SU TABLA DE MULTIPLICAR ES: ";
@@ -10,6 +10,6 @@ if (isset($numero_recibido) && $numero_recibido !== "") {
         echo "<li>" . $i . " X " . ".$numero_recibido." . " = " . $i * $numero_recibido . "</li>";
     }
     echo "</ul>";
-} else {
-    echo "La variable no esta definida";
-}
+// } else {
+    // echo "La variable no esta definida";
+// }

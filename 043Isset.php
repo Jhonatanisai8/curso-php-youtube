@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form action="044IssetVariables.php" method="post">
+    <form action="" method="post">
         <div>
             <input type="text" name="numero" id="numero" placeholder="Ingresa un numero">
         </div>
@@ -19,8 +19,9 @@
     </form>
 
     <?php
+    $numero_recibido = $_POST['numero'];
     if (isset($numero_recibido) && $numero_recibido !== "") {
-        
+        include "044IssetVariables.php";
     }
     ?>
 </body>
