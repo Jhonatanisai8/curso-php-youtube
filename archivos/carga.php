@@ -11,6 +11,11 @@ if (mime_content_type($_FILES['fichero']['tmp_name']) != "image/jpeg"
     exit();
 }
 
+if (($_FILES['fichero']['size'] / 1024) > 3072) {
+    echo "Ah sobrepasado el limite permitido.";
+    exit();
+}
+
 if (!file_exists("archivos_guardados")) {
     //creamos el directorio en caso no se encuentre
     if (!mkdir("archivos_guardados", 0777)) {
