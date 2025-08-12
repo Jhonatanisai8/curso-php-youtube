@@ -80,7 +80,7 @@
 </head>
 <body>
 <h3>Subir Archivos con PHP</h3>
-<form action="carga.php" method="post" enctype="multipart/form-data">
+    <form class="form__ajax" action="carga.php" method="post" enctype="multipart/form-data">
     <div>
         <input type="file" name="fichero">
     </div>
@@ -88,5 +88,6 @@
         <button type="submit">Enviar</button>
     </div>
 </form>
+<script src="../ajax.js"></script>
 </body>
 </html>
