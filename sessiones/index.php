@@ -25,7 +25,12 @@ session_start();
 <form action="login.php" method="post">
     <div>
         <label for="usuario">Usuario:</label>
-        <input type="text" name="usuario" id="usuario">
+        <input type="text"
+               name="usuario"
+               id="usuario"
+               pattern="[a-zA-Z]{3,10}"
+               placeholder="Usuario"
+               maxlength="10">
     </div>
     <div>
         <label for="password">Contraseña: </label>
