@@ -21,7 +21,7 @@ function enviar_formulario_ajax(e) {
         fetch(accion, configuracion)
             .then(respuesta => respuesta.text())
             .then(value => {
-            alert(value)
+            alert(value);
         });
     }
 }
