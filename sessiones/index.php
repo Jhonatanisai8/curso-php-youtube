@@ -34,7 +34,12 @@ session_start();
     </div>
     <div>
         <label for="password">Contraseña: </label>
-        <input type="password" name="password" id="password">
+        <input type="password"
+               name="password"
+               id="password"
+               pattern="[a-zA-Z0-9$%&@]{4,30}"
+               placeholder="Password"
+               maxlength="30">
     </div>
     <div>
         <button type="submit">LOGIN</button>

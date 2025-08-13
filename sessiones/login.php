@@ -4,6 +4,10 @@ if (!preg_match("/^[a-zA-Z]{3,10}$/", $_POST['usuario'])) {
     echo "El usuario no coincide con el formato correcto";
     exit();
 }
+if (!preg_match("/^[a-zA-Z0-9$%&@]{4,30}$/", $_POST['password'])) {
+    echo "El password no coincide con el formato correcto";
+    exit();
+}
 
 
 if ($_POST['usuario'] == "Jhonatan" &&
