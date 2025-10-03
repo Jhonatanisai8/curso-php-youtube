@@ -1,6 +1,6 @@
 <?php
-$nombre  = $_POST['nombre'];
-$asignatura =  $_POST['asignatura'];
+$nombre = $_POST['nombre'];
+$asignatura = $_POST['asignatura'];
 $fruta = $_POST['frutas'];
 $lenguaje = $_POST['lenguaje'];
 $profesiones = $_POST['profesiones'];
